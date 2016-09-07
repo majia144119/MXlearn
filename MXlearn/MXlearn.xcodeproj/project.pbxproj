@@ -15,6 +15,11 @@
 		1EE8F62C1D80116E009481E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8F62A1D80116E009481E3 /* LaunchScreen.storyboard */; };
 		1EE8F6371D80116E009481E3 /* MXlearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6361D80116E009481E3 /* MXlearnTests.m */; };
 		1EE8F6421D80116E009481E3 /* MXlearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6411D80116E009481E3 /* MXlearnUITests.m */; };
+		1EE8F6531D8022DE009481E3 /* GRBkeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6501D8022DE009481E3 /* GRBkeyTextField.m */; };
+		1EE8F6541D8022DE009481E3 /* GRBsafeKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6521D8022DE009481E3 /* GRBsafeKeyBoard.m */; };
+		1EE8F6571D80232F009481E3 /* GRBResultPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6561D80232F009481E3 /* GRBResultPayView.m */; };
+		1EE8F65A1D80238F009481E3 /* UIColor+extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6591D80238F009481E3 /* UIColor+extention.m */; };
+		1EE8F65D1D8023C6009481E3 /* GRBPayPsdInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F65C1D8023C6009481E3 /* GRBPayPsdInputView.m */; };
 		A72B232FA33ABD36CB117F01 /* libPods-MXlearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA8BF9BA6310EE8035DC1D6 /* libPods-MXlearn.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,16 @@
 		1EE8F63D1D80116E009481E3 /* MXlearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MXlearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE8F6411D80116E009481E3 /* MXlearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXlearnUITests.m; sourceTree = "<group>"; };
 		1EE8F6431D80116E009481E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE8F64F1D8022DE009481E3 /* GRBkeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBkeyTextField.h; sourceTree = "<group>"; };
+		1EE8F6501D8022DE009481E3 /* GRBkeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBkeyTextField.m; sourceTree = "<group>"; };
+		1EE8F6511D8022DE009481E3 /* GRBsafeKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBsafeKeyBoard.h; sourceTree = "<group>"; };
+		1EE8F6521D8022DE009481E3 /* GRBsafeKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBsafeKeyBoard.m; sourceTree = "<group>"; };
+		1EE8F6551D80232F009481E3 /* GRBResultPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBResultPayView.h; sourceTree = "<group>"; };
+		1EE8F6561D80232F009481E3 /* GRBResultPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBResultPayView.m; sourceTree = "<group>"; };
+		1EE8F6581D80238F009481E3 /* UIColor+extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extention.h"; sourceTree = "<group>"; };
+		1EE8F6591D80238F009481E3 /* UIColor+extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extention.m"; sourceTree = "<group>"; };
+		1EE8F65B1D8023C6009481E3 /* GRBPayPsdInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBPayPsdInputView.h; sourceTree = "<group>"; };
+		1EE8F65C1D8023C6009481E3 /* GRBPayPsdInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBPayPsdInputView.m; sourceTree = "<group>"; };
 		6DA8BF9BA6310EE8035DC1D6 /* libPods-MXlearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXlearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		739E94DA6E1BF9EB224B613F /* Pods-MXlearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXlearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn.release.xcconfig"; sourceTree = "<group>"; };
 		F07C89043CF28EF69FF20021 /* Pods-MXlearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXlearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +123,16 @@
 		1EE8F61B1D80116E009481E3 /* MXlearn */ = {
 			isa = PBXGroup;
 			children = (
+				1EE8F65B1D8023C6009481E3 /* GRBPayPsdInputView.h */,
+				1EE8F65C1D8023C6009481E3 /* GRBPayPsdInputView.m */,
+				1EE8F6581D80238F009481E3 /* UIColor+extention.h */,
+				1EE8F6591D80238F009481E3 /* UIColor+extention.m */,
+				1EE8F6551D80232F009481E3 /* GRBResultPayView.h */,
+				1EE8F6561D80232F009481E3 /* GRBResultPayView.m */,
+				1EE8F64F1D8022DE009481E3 /* GRBkeyTextField.h */,
+				1EE8F6501D8022DE009481E3 /* GRBkeyTextField.m */,
+				1EE8F6511D8022DE009481E3 /* GRBsafeKeyBoard.h */,
+				1EE8F6521D8022DE009481E3 /* GRBsafeKeyBoard.m */,
 				1EE8F61F1D80116E009481E3 /* AppDelegate.h */,
 				1EE8F6201D80116E009481E3 /* AppDelegate.m */,
 				1EE8F6221D80116E009481E3 /* ViewController.h */,
@@ -345,8 +370,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE8F6571D80232F009481E3 /* GRBResultPayView.m in Sources */,
 				1EE8F6241D80116E009481E3 /* ViewController.m in Sources */,
+				1EE8F65A1D80238F009481E3 /* UIColor+extention.m in Sources */,
+				1EE8F6541D8022DE009481E3 /* GRBsafeKeyBoard.m in Sources */,
+				1EE8F6531D8022DE009481E3 /* GRBkeyTextField.m in Sources */,
 				1EE8F6211D80116E009481E3 /* AppDelegate.m in Sources */,
+				1EE8F65D1D8023C6009481E3 /* GRBPayPsdInputView.m in Sources */,
 				1EE8F61E1D80116E009481E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
