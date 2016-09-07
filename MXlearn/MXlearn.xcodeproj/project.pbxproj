@@ -15,6 +15,7 @@
 		1EE8F62C1D80116E009481E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8F62A1D80116E009481E3 /* LaunchScreen.storyboard */; };
 		1EE8F6371D80116E009481E3 /* MXlearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6361D80116E009481E3 /* MXlearnTests.m */; };
 		1EE8F6421D80116E009481E3 /* MXlearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8F6411D80116E009481E3 /* MXlearnUITests.m */; };
+		A72B232FA33ABD36CB117F01 /* libPods-MXlearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA8BF9BA6310EE8035DC1D6 /* libPods-MXlearn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		1EE8F63D1D80116E009481E3 /* MXlearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MXlearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE8F6411D80116E009481E3 /* MXlearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXlearnUITests.m; sourceTree = "<group>"; };
 		1EE8F6431D80116E009481E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA8BF9BA6310EE8035DC1D6 /* libPods-MXlearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXlearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E94DA6E1BF9EB224B613F /* Pods-MXlearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXlearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn.release.xcconfig"; sourceTree = "<group>"; };
+		F07C89043CF28EF69FF20021 /* Pods-MXlearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXlearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72B232FA33ABD36CB117F01 /* libPods-MXlearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				1EE8F6351D80116E009481E3 /* MXlearnTests */,
 				1EE8F6401D80116E009481E3 /* MXlearnUITests */,
 				1EE8F61A1D80116E009481E3 /* Products */,
+				F23FBFC03F3434E7792F4840 /* Pods */,
+				457EB27404E3D7952DA8F128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = MXlearnUITests;
 			sourceTree = "<group>";
 		};
+		457EB27404E3D7952DA8F128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8BF9BA6310EE8035DC1D6 /* libPods-MXlearn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F23FBFC03F3434E7792F4840 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F07C89043CF28EF69FF20021 /* Pods-MXlearn.debug.xcconfig */,
+				739E94DA6E1BF9EB224B613F /* Pods-MXlearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EE8F6461D80116E009481E3 /* Build configuration list for PBXNativeTarget "MXlearn" */;
 			buildPhases = (
+				D38C2A54914BCEE8C3844D56 /* [CP] Check Pods Manifest.lock */,
 				1EE8F6151D80116E009481E3 /* Sources */,
 				1EE8F6161D80116E009481E3 /* Frameworks */,
 				1EE8F6171D80116E009481E3 /* Resources */,
+				DFBB60EE0179DA4DE04658BA /* [CP] Embed Pods Frameworks */,
+				EBB03FC22FD9B64DAF9F389E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D38C2A54914BCEE8C3844D56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBB60EE0179DA4DE04658BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB03FC22FD9B64DAF9F389E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MXlearn/Pods-MXlearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EE8F6151D80116E009481E3 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		1EE8F6471D80116E009481E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F07C89043CF28EF69FF20021 /* Pods-MXlearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MXlearn/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		1EE8F6481D80116E009481E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739E94DA6E1BF9EB224B613F /* Pods-MXlearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MXlearn/Info.plist;
@@ -498,6 +575,7 @@
 				1EE8F6481D80116E009481E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EE8F6491D80116E009481E3 /* Build configuration list for PBXNativeTarget "MXlearnTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				1EE8F64B1D80116E009481E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EE8F64C1D80116E009481E3 /* Build configuration list for PBXNativeTarget "MXlearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				1EE8F64E1D80116E009481E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
